@@ -15,6 +15,8 @@
 
 </div>
 
+🔗 **Live Demo:** [mira-health-app.streamlit.app](https://mira-health-app.streamlit.app)
+
 ---
 
 ## Overview
@@ -145,7 +147,11 @@ GROQ_API_KEY = "your_groq_api_key_here"
 ## Author
 
 **Rose Sharma**
-B.Tech CSE (AI Specialisation) — 2025 Graduate
+## 👩‍💻 Author
+- 🌐 Portfolio: [rosesharma13.github.io](https://rosesharma13.github.io)
+- 💼 LinkedIn: [linkedin.com/in/rose-sharma13](https://www.linkedin.com/in/rose-sharma13)
+- 📧 Email: rosesharmaa132003@gmail.com
+
 [![GitHub](https://img.shields.io/badge/GitHub-Rosesharma13-181717?style=flat-square&logo=github)](https://github.com/Rosesharma13)
 
 ---
