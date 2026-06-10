@@ -498,20 +498,15 @@ elif page == "➕  Add Patient":
         st.markdown('<div class="form-section-label">Patient Information</div>', unsafe_allow_html=True)
         col1, col2 = st.columns(2)
         with col1:
-            full_name = st.text_input("Full Name", placeholder="e.g. Ananya Sharma")
+            full_name = st.text_input("Full Name", placeholder="e.g. John Smith")
         with col2:
-            email = st.text_input("Email Address", placeholder="e.g. ananya@email.com")
+            email = st.text_input("Email Address", placeholder="e.g. john@email.com")
 
         col3, col4 = st.columns(2)
         with col3:
-            dob = st.date_input(
-                "Date of Birth",
-                min_value=date(1900, 1, 1),
-                max_value=date.today(),
-                value=date(1990, 1, 1)
-            )
+            dob = st.text_input("Date of Birth (YYYY-MM-DD)", placeholder="e.g. 1990-06-15")
         with col4:
-            st.markdown('<div style="padding-top:1.8rem; font-size:0.8rem; color:#64748b;">Age will be calculated automatically from DOB.</div>', unsafe_allow_html=True)
+            st.markdown('<div style="padding-top:1.8rem; font-size:0.8rem; color:#64748b;">Enter date as YYYY-MM-DD. Invalid dates (e.g. 31 Nov) will be rejected.</div>', unsafe_allow_html=True)
 
         st.markdown('<div class="form-section-label">Biomarker Values</div>', unsafe_allow_html=True)
         col5, col6, col7 = st.columns(3)
@@ -645,7 +640,7 @@ elif page == "📋  All Patients":
                     with col2:
                         e_email = st.text_input("Email", value=p['email'])
 
-                    e_dob = st.date_input("Date of Birth", value=datetime.strptime(p['date_of_birth'], "%Y-%m-%d").date())
+                    e_dob = st.text_input("Date of Birth (YYYY-MM-DD)", value=p['date_of_birth'], placeholder="e.g. 1990-06-15")
 
                     col3, col4, col5 = st.columns(3)
                     with col3:
