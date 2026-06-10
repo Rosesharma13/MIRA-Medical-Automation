@@ -506,7 +506,7 @@ elif page == "➕  Add Patient":
         with col3:
             dob = st.text_input("Date of Birth (YYYY-MM-DD)", placeholder="YYYY-MM-DD")
         with col4:
-            st.markdown('<div style="padding-top:1.8rem; font-size:0.8rem; color:#64748b;">Enter date as YYYY-MM-DD. Invalid dates (e.g. 31 Nov) will be rejected.</div>', unsafe_allow_html=True)
+            st.markdown('<div style="padding-top:1.8rem; font-size:0.8rem; color:#64748b;">Format: YYYY-MM-DD</div>', unsafe_allow_html=True)
 
         st.markdown('<div class="form-section-label">Biomarker Values</div>', unsafe_allow_html=True)
         col5, col6, col7 = st.columns(3)
